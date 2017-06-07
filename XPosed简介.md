@@ -116,6 +116,6 @@ XposedBridge既是Xpose的插件开发或是基于Xposed的APP开发使用的框
 Xposed和XposedBridge编译依赖于Android源码，而且还有一些定制化的东西。
 所以XposedTools就是用来帮助我们编译Xposed和XposedBridge的。  
 #### 5. XposedInstaller
-[XposedInstaller]https://github.com/rovo89/XposedInstaller  
-之个子项目编译生成了Xpose的Installer.apk。是Xposed的插件管理和功能控制APP，也就是说Xposed整体管控功能就是由这个APP来完成的，
+[XposedInstaller https://github.com/rovo89/XposedInstaller](https://github.com/rovo89/XposedInstaller)   
+这个子项目编译生成了Xpose的Installer.apk。是Xposed的插件管理和功能控制APP，也就是说Xposed整体管控功能就是由这个APP来完成的，
 它包括启用Xposed插件功能，下载和启用指定插件APP，还可以禁用Xposed插件功能等。注意，这个app要正常无误得运行必须能拿到root权限。
