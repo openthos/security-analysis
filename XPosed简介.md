@@ -123,3 +123,4 @@ Xposed和XposedBridge编译依赖于Android源码，而且还有一些定制化�
 ## 如何使用Xposed
 ## Xposed插件开发入门
 ## XPosed与Android 7
+## Xposed与OPENTHOS
