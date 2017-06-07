@@ -103,12 +103,19 @@ endif
 ```
 
 #### 2. android_art  
-这个project是对AOSP/art的patch.  
 链接[android_art https://github.com/rovo89/android_art](https://github.com/rovo89/android_art)  
+这个project是对AOSP/art的patch.  
 其具体的作用应该是通过在art中打了一些桩函数，供XposedBridge来使用（暂时只是推测，后续仍需要分析代码
 明确实际 用途）。
 #### 3. XposedBridge
-这个子项目生成了XposedBridge.jar  
 链接[XposedBridge https://github.com/rovo89/XposedBridge](https://github.com/rovo89/XposedBridge)  
+这个子项目生成了XposedBridge.jar  
 XposedBridge既是Xpose的插件开发或是基于Xposed的APP开发使用的框架，也是各插件或是app的加载器。  
-#### 4. XposedTools
+#### 4. XposedTools  
+链接[Xpose的Tools https://github.com/rovo89/XposedTools](https://github.com/rovo89/XposedTools)  
+Xposed和XposedBridge编译依赖于Android源码，而且还有一些定制化的东西。
+所以XposedTools就是用来帮助我们编译Xposed和XposedBridge的。  
+#### 5. XposedInstaller
+[XposedInstaller]https://github.com/rovo89/XposedInstaller  
+之个子项目编译生成了Xpose的Installer.apk。是Xposed的插件管理和功能控制APP，也就是说Xposed整体管控功能就是由这个APP来完成的，
+它包括启用Xposed插件功能，下载和启用指定插件APP，还可以禁用Xposed插件功能等。注意，这个app要正常无误得运行必须能拿到root权限。
